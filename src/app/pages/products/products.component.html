@@ -1,0 +1,62 @@
+  
+  <div class="categorysel">
+      <span>Category: </span>
+      <select [(ngModel)]="categorySelected" (click)="onSelect(category)">
+        <option *ngFor="let categories of category">
+          {{ categories.category }}
+        </option>
+      </select>
+
+      <br>
+      <div *ngIf="categorySelected">
+        <h2> {{categorySelected | uppercase }}</h2>
+        <div class="product-item"> 
+            <img src="./assets/img/iPhone11.jpg" class="sell" alt="Mens Slim Fit Short Sleeve Gradient Colour Button Shirt Top" /> 
+            <h3 class="product-name"> Apple iPhone 11 </h3> 
+            <br>
+            <button class="viewdetails"  name="iPhone11"  value=""> <span>View Details</span> </button>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="product-list">
+  <h1 class="productcategory"> Mobile Phones </h1>
+  <h4 class="productbrand">Apple</h4>
+  <br>
+  <div class="products">
+  
+  <div class="product-item"> 
+    <img src="./assets/img/iPhone11PROMAX.jpg" class="sell" alt="Checkered Short Sleeve Shirt"/> 
+    <h3 class="product-name"> Apple iPhone 11 Pro Max </h3> 
+    <br>
+    <button class="viewdetails" name="iPhone11PROMAX"  value="" > <span>View Details</span> </button>
+  </div>
+
+  <div class="product-item"> 
+    <img src="./assets/img/iPhone11PRO.jpg" class="sell" alt="Buttoned Short Sleeve Shirt"/> 
+    <h3 class="product-name"> Apple iPhone 11 Pro </h3> 
+    <br>
+    <button class="viewdetails" name="iPhone11PRO" value=""> <span>View Details</span> </button>
+  </div>
+
+  <div class="product-item"> 
+    <img src="./assets/img/iPhone11.jpg" class="sell" alt="Mens Slim Fit Short Sleeve Gradient Colour Button Shirt Top" /> 
+    <h3 class="product-name"> Apple iPhone 11 </h3> 
+    <br>
+    <button class="viewdetails"  name="iPhone11"  value=""> <span>View Details</span> </button>
+  </div>
+
+  </div>
+</div> -->
